@@ -1,68 +1,136 @@
-
 .site-container {
-    background-color:azure;
+  background-color: azure;
 }
 .container {
-    max-width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 .header {
-    width: 100%;
-    height: 6vh;
-    padding-top: 18px;}
+  width: 100%;
+  height: 8vh;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.button-left,
+.button-right {
+  border: groove 0.2em rgb(0, 0, 0);
+  border-radius: 0.8em;
+  padding: 10px;
+}
 .header h1 {
-    text-align: center;
-    margin: 0;
+  font-family: $additional-font;
+  text-align: center;
+  margin: 0;
+  font-size: 2.5em;
 }
 .main {
-    height: 94vh;
-    width: 1100vw;
-    display: flex;
-    overflow: hidden;
+  height: 92vh;
+  width: 2300vw;
+  display: flex;
+  overflow: hidden;
 }
 .main section {
-    padding: 100px 0;
-    height: 100%;
-    width: 100vw;
-    background-color: azure;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  padding: 100px 0;
+  height: 100%;
+  width: 100vw;
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 .video {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-1 {
-    background-image: url("/images/children1.jpg");
+  background-image: url('../images/children.jpg');
 }
 .section-2 {
-    background-image: url("/images/children2.jpg");
+  background-image: url('/images/ocean.jpg');
 }
 .section-3 {
-    background-image: url("/images/ocean.jpg");
+  background-image: url('../images/european_carp.jpg');
 }
 .section-4 {
-    background-image: url("/images/european_carp.jpg");
+  background-image: url('../images/pike.jpg');
 }
 .section-5 {
-    background-image: url("/images/pike.jpg");
+  background-image: url('../images/sander.jpg');
 }
 .section-6 {
-    background-image: url("/images/sander.jpg");
+  background-image: url('../images/thunnus.jpg');
 }
 .section-7 {
-    background-image: url("/images/european_ perch.jpg");
+  background-image: url('../images/trout.jpg');
 }
 .section-8 {
-    background-image: url("/images/wels_catfish.jpg");
+  background-image: url('../images/king_mackerel.jpg');
 }
 .section-9 {
-    background-image: url("/images/koi.jpg");
+  background-image: url('../images/european_eel.jpg');
 }
 .section-10 {
-    background-image: url("/images/trout.jpg");
+  background-image: url('../images/takifugu.jpg');
+}
+.section-11 {
+  background-image: url('../images/fish_chips_and_mushy_peas.jpg');
+}
+.section-12 {
+  background-image: url('../images/seafood_market.jpg');
+}
+.section-13 {
+  background-image: url('../images/european_perch.jpg');
+}
+.section-14 {
+  background-image: url('../images/wels_catfish.jpg');
+}
+.section-15 {
+  background-image: url('../images/koi.jpg');
+}
+.section-16 {
+  background-image: url('../images/discus.jpg');
+}
+.section-17 {
+  background-image: url('../images/marlin.jpg');
+}
+.section-18 {
+  background-image: url('../images/bluestriped_snapper.jpg');
+}
+.section-19 {
+  background-image: url('../images/goldfish.jpg');
+}
+.section-20 {
+  background-image: url('../images/manta_rays.jpg');
+}
+.section-21 {
+  background-image: url('../images/children1.jpg');
+}
+.section-22 {
+  background-image: url('../images/shark.jpg');
+}
+
+h2 {
+  font-size: 2.1em;
+  text-shadow: 0 0 15px $additional-color;
+}
+p {
+  font-size: 1.8em;
+  text-shadow: 0 0 15px $additional-color;
+}
+h3 {
+  position: absolute;
+  font-size: 1.9em;
+  text-shadow: 0 0 15px $additional-color;
+  bottom: 3vh;
+  right: 3vh;
+  margin: 0;
 }
