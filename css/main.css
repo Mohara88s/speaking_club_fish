@@ -362,7 +362,7 @@ body {
 }
 
 .section-2 {
-  background-image: url("/images/ocean.jpg");
+  background-image: url("../images/ocean.jpg");
 }
 
 .section-3 {
