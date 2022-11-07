@@ -46,18 +46,23 @@ tl.fromTo('.section-23', { x: '-2200%', y: '+130%'}, { duration: 6, y: '+130%' ,
 
 const refs = {
   leftBtn: document.querySelector('.button-left'), 
-  rightBtn: document.querySelector('.button-right'),  
+  rightBtn: document.querySelector('.button-right'), 
+  video: document.querySelector('.video'),  
 };
+
 refs.leftBtn.addEventListener('click', onLeftBtnClick)
 refs.rightBtn.addEventListener('click', onRightBtnClick)
 window.addEventListener('keydown', onKeydown)
 
 function onLeftBtnClick() {
   tl.reverse();
+  stopVideo()
 }
 function onRightBtnClick() {
   tl.play();
+  stopVideo()
 }
+
 function onKeydown(event) {
   if (event.code === 'ArrowRight') {
     onArrowRightKeydown()
@@ -69,11 +74,16 @@ function onKeydown(event) {
 
 function onArrowRightKeydown() {
   tl.play();
+  stopVideo()
 }
 function onArrowLeftKeydown() {
   tl.reverse();
+  stopVideo()
 }
 
+function stopVideo() {
+  refs.video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
+}
 
 // const main = document.querySelector('.main')
 // ScrollTrigger.create({
