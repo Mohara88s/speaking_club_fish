@@ -23,7 +23,8 @@
 .button-right {
   border: ridge 0.2em rgb(0, 0, 0);
   border-radius: 0.8em;
-  padding: 10px;
+  padding: 2px;
+  height: 30px;
 
   &:hover,
   &:focus {
@@ -32,14 +33,13 @@
   &:active {
     border: ridge 0.4em rgb(255, 0, 34);
   }
-  
 }
 
 .header h1 {
   font-family: $additional-font;
   text-align: center;
   margin: 0;
-  font-size: 2.5em;
+  font-size: 1.4em;
 }
 .main {
   height: 92vh;
@@ -48,7 +48,7 @@
   overflow: hidden;
 }
 .main section {
-  padding: 100px 0;
+  padding: 20px 0;
   height: 100%;
   width: 100vw;
   background-color: transparent;
@@ -130,33 +130,54 @@
 }
 
 h2 {
-  font-size: 2.1em;
+  font-size: 1.2em;
   text-shadow: 0 0 15px $additional-color;
+  margin: 10px;
 }
 p {
-  font-size: 1.8em;
+  font-size: 1em;
   text-shadow: 0 0 15px $additional-color;
 }
 h3 {
   position: absolute;
-  font-size: 1.9em;
+  font-size: 1.1em;
   text-shadow: 0 0 15px $additional-color;
   bottom: 3vh;
   right: 3vh;
   margin: 0;
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1000px) {
   .site-container {
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
   }
 
+  .button-left,
+  .button-right {
+    padding: 10px;
+    height: 50px;
+  }
+  .header h1 {
+    font-size: 2.5em;
+  }
   .main {
     width: 1840vw;
   }
   .main section {
     width: 80vw;
+  }
+
+  h2 {
+    font-size: 2.1em;
+  }
+  p {
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.9em;
+    bottom: 3vh;
+    right: 3vh;
   }
 }
