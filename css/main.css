@@ -286,9 +286,18 @@ body {
 }
 
 .warning {
-  font-size: 3em;
+  font-size: 4em;
   color: red;
-  background-color: #ffabd8;
+  background-color: rgba(255, 145, 0, 0.4);
+  position: absolute;
+  z-index: 100;
+  max-width: 90vw;
+  max-height: 90vh;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  padding: 50px;
 }
 
 .site-container {
@@ -336,12 +345,12 @@ body {
 .button-left:hover, .button-left:focus,
 .button-right:hover,
 .button-right:focus {
-  border: ridge 0.3em #26ff00;
+  border: ridge 0.3em rgba(0, 255, 0, 0.7);
 }
 
 .button-left:active,
 .button-right:active {
-  border: ridge 0.4em #ff0022;
+  border: ridge 0.4em rgba(255, 0, 0, 0.7);
 }
 
 .header h1 {
