@@ -24,7 +24,7 @@
   border: ridge 0.2em rgb(0, 0, 0);
   border-radius: 0.8em;
   padding: 2px;
-  height: 28px;
+  height: 25px;
 
   &:hover,
   &:focus {
@@ -130,20 +130,23 @@
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-shadow: 0 0 15px $additional-color;
   margin: 10px;
 }
 p {
-  font-size: 1em;
+  font-size: 1.2em;
   text-shadow: 0 0 15px $additional-color;
 }
 h3 {
   position: absolute;
-  font-size: 1.1em;
+  font-size: 1.3em;
   text-shadow: 0 0 15px $additional-color;
   bottom: 3vh;
   right: 3vh;
+  margin: 0;
+}
+ul {
   margin: 0;
 }
 
