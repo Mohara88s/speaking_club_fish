@@ -291,13 +291,13 @@ body {
   background-color: rgba(255, 145, 0, 0.4);
   position: absolute;
   z-index: 100;
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 50vw;
+  max-height: 50vh;
   top: 10%;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  padding: 50px;
+  padding: 25px;
 }
 
 .site-container {
