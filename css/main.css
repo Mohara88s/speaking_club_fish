@@ -310,7 +310,7 @@ body {
 
 .header {
   width: 100%;
-  height: 8vh;
+  height: 9vh;
 }
 
 .header__container {
@@ -352,7 +352,7 @@ body {
 }
 
 .main {
-  height: 92vh;
+  height: 91vh;
   width: 2300vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,7 +361,7 @@ body {
 }
 
 .main section {
-  padding: 20px 0;
+  padding: 10px 0;
   height: 100%;
   width: 100vw;
   background-color: transparent;
@@ -494,11 +494,9 @@ ul {
   }
 }
 
-@media screen and (min-width: 1100px) {
-  .site-container {
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (min-width: 1200px) {
+  .header {
+    height: 8vh;
   }
   .button-left,
   .button-right {
@@ -509,14 +507,11 @@ ul {
     font-size: 2.5em;
   }
   .main {
-    width: 1840vw;
-  }
-  .main section {
-    width: 80vw;
+    height: 92vh;
   }
   .video {
-    width: 800px;
-    height: 500px;
+    width: 600px;
+    height: 340px;
   }
   h2 {
     font-size: 2.1em;
@@ -526,8 +521,24 @@ ul {
   }
   h3 {
     font-size: 1.9em;
-    bottom: 3vh;
-    right: 3vh;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .site-container {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main {
+    width: 1840vw;
+  }
+  .main section {
+    width: 80vw;
+  }
+  .video {
+    width: 800px;
+    height: 500px;
   }
 }
 /*# sourceMappingURL=main.css.map */
