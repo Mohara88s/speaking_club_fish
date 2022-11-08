@@ -1,3 +1,8 @@
+.warning {
+  font-size: 3em;
+  color: red;
+  background-color: rgb(255, 171, 216);
+}
 .site-container {
   background-color: azure;
   overflow: hidden;
@@ -148,6 +153,11 @@ h3 {
 }
 ul {
   margin: 0;
+}
+@media screen and (min-width: 700px) {
+  .warning {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1000px) {

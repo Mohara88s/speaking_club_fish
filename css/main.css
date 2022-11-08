@@ -285,6 +285,12 @@ body {
   font-family: "DINNextLTPro-Medium", sans-serif;
 }
 
+.warning {
+  font-size: 3em;
+  color: red;
+  background-color: #ffabd8;
+}
+
 .site-container {
   background-color: azure;
   overflow: hidden;
@@ -480,6 +486,12 @@ h3 {
 
 ul {
   margin: 0;
+}
+
+@media screen and (min-width: 700px) {
+  .warning {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1000px) {
