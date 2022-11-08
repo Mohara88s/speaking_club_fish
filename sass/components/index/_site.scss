@@ -21,10 +21,20 @@
 }
 .button-left,
 .button-right {
-  border: groove 0.2em rgb(0, 0, 0);
+  border: ridge 0.2em rgb(0, 0, 0);
   border-radius: 0.8em;
   padding: 10px;
+
+  &:hover,
+  &:focus {
+    border: ridge 0.3em rgb(38, 255, 0);
+  }
+  &:active {
+    border: ridge 0.4em rgb(255, 0, 34);
+  }
+  
 }
+
 .header h1 {
   font-family: $additional-font;
   text-align: center;
@@ -136,8 +146,7 @@ h3 {
   margin: 0;
 }
 
-
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 1300px) {
   .site-container {
     width: 80vw;
     margin-left: auto;

@@ -321,9 +321,20 @@ body {
 
 .button-left,
 .button-right {
-  border: groove 0.2em black;
+  border: ridge 0.2em black;
   border-radius: 0.8em;
   padding: 10px;
+}
+
+.button-left:hover, .button-left:focus,
+.button-right:hover,
+.button-right:focus {
+  border: ridge 0.3em #26ff00;
+}
+
+.button-left:active,
+.button-right:active {
+  border: ridge 0.4em #ff0022;
 }
 
 .header h1 {
